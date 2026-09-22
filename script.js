@@ -1,4 +1,4 @@
-const endpoint = "https://kea-alt-del.dk/t7/api/products?limit=10";
+const endpoint = "              ";
 
 const produktListe = document.querySelector(".productlist");
 
@@ -12,6 +12,11 @@ function visData(json) {
   json.forEach((produkt) => {
     produktListe.innerHTML += `
       <article class="card">
+        <img
+          src="https://kea-alt-del.dk/t7/images/webp/640/${produkt.id}.webp"
+          alt="${produkt.productdisplayname}"
+        >
+
         <h2>${produkt.brandname}</h2>
         <h3>${produkt.productdisplayname}</h3>
         <p>${produkt.price} kr.</p>
