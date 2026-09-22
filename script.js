@@ -1,5 +1,4 @@
-const endpoint = "https://kea-alt-del.dk/t7/api/products?limit=10";
-
+<img src="https://kea-alt-del.dk/t7/images/webp/640/${produkt.id}.webp" alt="produkt">
 const productList = document.querySelector(".productlist");
 
 fetch(endpoint)
